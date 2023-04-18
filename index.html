@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portafolio de Lucas</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+  <head>
+    <header>
+      <header>
+        <div class="logo">
+          <a href="#"><img src="tu-logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+          <button class="toggle-menu"><span></span></button>
+          <ul>
+            <li><a href="#">Té</a></li>
+            <li><a href="#">Accesorios para té</a></li>
+            <li><a href="#">Regalos</a></li>
+            <li><a href="#">Mi cuenta</a></li>
+          </ul>
+        </nav>
+      </header>
+      <script>const navToggle = document.querySelector('header nav button');
+        const navMenu = document.querySelector('header nav ul');
+
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('show');
+        });</script>
+    </header>
+
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="imagen-1.jpg" alt="Imagen 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="imagen-2.jpg" alt="Imagen 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="imagen-3.jpg" alt="Imagen 3">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </body>
+
+</html>
