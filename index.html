@@ -1,53 +1,89 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-  <title>Portafolio de Lucas</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores y Aromas - Venta de té</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
-
-  <head>
-    <header>
-      <header>
-        <div class="logo">
-          <a href="#"><img src="tu-logo.png" alt="Logo"></a>
-        </div>
-        <nav>
-          <button class="toggle-menu"><span></span></button>
-          <ul>
-            <li><a href="#">Té</a></li>
-            <li><a href="#">Accesorios para té</a></li>
-            <li><a href="#">Regalos</a></li>
-            <li><a href="#">Mi cuenta</a></li>
-          </ul>
-        </nav>
-      </header>
-      <script>const navToggle = document.querySelector('header nav button');
-        const navMenu = document.querySelector('header nav ul');
-
-        navToggle.addEventListener('click', () => {
-          navMenu.classList.toggle('show');
-        });</script>
-    </header>
-
-  <body>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="imagen-1.jpg" alt="Imagen 1">
-        </div>
-        <div class="swiper-slide">
-          <img src="imagen-2.jpg" alt="Imagen 2">
-        </div>
-        <div class="swiper-slide">
-          <img src="imagen-3.jpg" alt="Imagen 3">
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
+  <header class="header">
+    <a href="#" class="logo">Sabores y Aromas</a>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Tienda</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
+  </header>
+  
 
-  </body>
-
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Descubre los sabores del té</h1>
+      <p>Con nuestra selección de tés de alta calidad</p>
+      <a href="#" class="cta">Comprar ahora</a>
+    </div>
+  </section>
+  <section class="featured-products">
+    <h2>Productos destacados</h2>
+    <div class="product">
+      <img src="te-verde.jpg" alt="Té verde">
+      <h3>Té verde</h3>
+      <p>Disfruta de las propiedades antioxidantes y energizantes del té verde.</p>
+      <span class="price">$10.99</span>
+      <button class="add-to-cart">Agregar al carrito</button>
+    </div>
+    <div class="product">
+      <img src="te-rojo.jpg" alt="Té rojo">
+      <h3>Té rojo</h3>
+      <p>Disfruta de una taza de té negro para empezar el día con energía</p>
+      <span class="price">$12.99</span>
+      <button class="add-to-cart">Agregar al carrito</button>
+    </div>
+    <div class="product">
+      <img src="te-negro.jpg" alt="Té negro">
+      <h3>Té negro</h3>
+      <p>Disfruta de una taza de té negro para empezar el día con energía.</p>
+      <span class="price">$8.99</span>
+      <button class="add-to-cart">Agregar al carrito</button>
+    </div>
+  </section>
+  
+  
+  <footer>
+    <div class="container">
+      <section class="contact">
+        <h2>Contacto</h2>
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Correo electrónico" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Mensaje" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <div class="social-media">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="copy">&copy; Sabores y Aromas - Venta de té</p>
+  </footer>
+  
+  </footer>
+  <script src="app.js"></script>
+</body>
 </html>
